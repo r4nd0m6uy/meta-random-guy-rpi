@@ -8,6 +8,8 @@ BBLAYERS ?= "\
   ##COREBASE##/meta \
   ##COREBASE##/meta-yocto \
   ##COREBASE##/meta-yocto-bsp \
+  ##COREBASE##/meta-openembedded/meta-oe \
+  ##COREBASE##/meta-openembedded/meta-multimedia \
   ##COREBASE##/meta-raspberrypi \
   ##COREBASE##/meta-random-guy-rpi \
   "

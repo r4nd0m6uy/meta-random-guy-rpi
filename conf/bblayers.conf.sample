@@ -1,0 +1,17 @@
+LCONF_VERSION = "6"
+
+BBPATH = "${TOPDIR}"
+
+BBFILES ?= ""
+
+BBLAYERS ?= "\
+  ##COREBASE##/meta \
+  ##COREBASE##/meta-yocto \
+  ##COREBASE##/meta-yocto-bsp \
+  ##COREBASE##/meta-raspberrypi \
+  ##COREBASE##/meta-random-guy-rpi \
+  "
+BBLAYERS_NON_REMOVABLE ?= "\
+  ##COREBASE##/meta \
+  ##COREBASE##/meta-yocto \
+  "

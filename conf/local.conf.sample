@@ -1,0 +1,48 @@
+# Machine Selection
+MACHINE ??= "raspberrypi2"
+
+# GPU  memeory for the raspberry
+GPU_MEM = "16"
+
+# Distro
+DISTRO ?= "poky"
+
+# Package Management configuration
+PACKAGE_CLASSES ?= "package_ipk"
+
+# SDK/ADT target architecture
+#SDKMACHINE ?= "i686"
+#SDKMACHINE ?= "x86_64"
+
+# Extra image configuration defaults
+#EXTRA_IMAGE_FEATURES = "debug-tweaks"
+
+# Additional image features
+USER_CLASSES ?= "buildstats image-mklibs image-prelink"
+
+# Interactive shell configuration
+#OE_TERMINAL = "auto"
+
+# By default disable interactive patch resolution (tasks will just fail instead):
+PATCHRESOLVE = "noop"
+
+# Disk Space Monitoring during the build
+BB_DISKMON_DIRS = "\
+    STOPTASKS,${TMPDIR},1G,100K \
+    STOPTASKS,${DL_DIR},1G,100K \
+    STOPTASKS,${SSTATE_DIR},1G,100K \
+    ABORT,${TMPDIR},100M,1K \
+    ABORT,${DL_DIR},100M,1K \
+    ABORT,${SSTATE_DIR},100M,1K" 
+
+# Shared-state files from other locations
+#SSTATE_MIRRORS ?= "\
+#file://.* http://someserver.tld/share/sstate/PATH;downloadfilename=PATH \n \
+#file://.* file:///some/local/dir/sstate/PATH"
+
+# Qemu configuration
+PACKAGECONFIG_append_pn-qemu-native = " sdl"
+PACKAGECONFIG_append_pn-nativesdk-qemu = " sdl"
+ASSUME_PROVIDED += "libsdl-native"
+
+CONF_VERSION = "1"

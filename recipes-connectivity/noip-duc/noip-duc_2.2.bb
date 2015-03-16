@@ -15,6 +15,7 @@ SRC_URI[sha256sum] = "208dbc1abb245981ac72dfc0adc8725f9143b4f11f72c2e17dce242787
 
 SRC_URI = " \
   http://onevista.com/noip-${PV}.tgz \
+  file://0001-noip2.c-Remove-prefix-for-configuration-files.patch \
 "
 
 do_compile () {

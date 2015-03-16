@@ -1,0 +1,30 @@
+From fe96cdc2b05edac68ddeca67418cfdadfc2a50be Mon Sep 17 00:00:00 2001
+From: Guy Morand <morandg@gmail.com>
+Date: Mon, 16 Mar 2015 13:39:42 +0100
+Subject: [PATCH] noip2.c: Remove prefix for configuration files
+
+Do not use /usr/local as prefix but /
+
+Signed-off-by: Guy Morand <morandg@gmail.com>
+---
+ noip2.c |    4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/noip2.c b/noip2.c
+index 3ef8294..a9495c8 100644
+--- a/noip2.c
++++ b/noip2.c
+@@ -257,8 +257,8 @@
+ #ifndef PREFIX
+   #define PREFIX		"/usr/local"
+ #endif
+-#define CONFIG_FILEPATH		PREFIX"/etc"
+-#define CONFIG_FILENAME		PREFIX"/etc/no-ip2.conf"
++#define CONFIG_FILEPATH		"/etc"
++#define CONFIG_FILENAME		"/etc/no-ip2.conf"
+ #define CONFSTRLEN		1024
+ #define MAX_DEVLEN		16
+ #define MAX_INSTANCE		4
+-- 
+1.7.9.5
+

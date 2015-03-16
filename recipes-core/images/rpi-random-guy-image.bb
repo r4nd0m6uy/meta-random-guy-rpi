@@ -13,4 +13,5 @@ IMAGE_INSTALL_append = "\
   packagegroup-core-x11-base \
   mpd \
   minidlna \
+  noip-duc \
   "

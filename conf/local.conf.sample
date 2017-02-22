@@ -49,3 +49,6 @@ CONF_VERSION = "1"
 
 # This is required to build some chipstreck non free packages
 LICENSE_FLAGS_WHITELIST = "commercial"
+
+# Compile SDL
+ASSUME_PROVIDED_remove = "libsdl-native"

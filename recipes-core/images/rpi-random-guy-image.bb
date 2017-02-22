@@ -9,9 +9,4 @@ IMAGE_FEATURES_append = "\
   splash \
   "
 
-IMAGE_INSTALL_append = "\
-  packagegroup-core-x11-base \
-  mpd \
-  minidlna \
-  noip-duc \
-  "
+IMAGE_INSTALL_append = ""

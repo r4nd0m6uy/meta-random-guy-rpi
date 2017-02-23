@@ -7,6 +7,7 @@ SPLASH = "psplash-raspberrypi"
 IMAGE_FEATURES_append = "\
   ssh-server-openssh \
   splash \
+  package-management \
   "
 
 IMAGE_INSTALL_append = " \

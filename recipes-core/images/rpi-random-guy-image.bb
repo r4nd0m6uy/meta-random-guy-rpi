@@ -9,4 +9,6 @@ IMAGE_FEATURES_append = "\
   splash \
   "
 
-IMAGE_INSTALL_append = ""
+IMAGE_INSTALL_append = " \
+	charguychess \
+	"

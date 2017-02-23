@@ -52,3 +52,6 @@ LICENSE_FLAGS_WHITELIST = "commercial"
 
 # Compile SDL
 ASSUME_PROVIDED_remove = "libsdl-native"
+
+# Clean up after build
+INHERIT += "rm_work"

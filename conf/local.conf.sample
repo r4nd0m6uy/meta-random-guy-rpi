@@ -1,5 +1,5 @@
 # Machine Selection
-MACHINE ??= "raspberrypi2"
+MACHINE ??= "raspberrypi3"
 
 # GPU  memeory for the raspberry
 GPU_MEM = "16"

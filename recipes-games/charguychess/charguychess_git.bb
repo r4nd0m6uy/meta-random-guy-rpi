@@ -12,7 +12,7 @@ inherit cmake
 SRC_URI = " \
   git://github.com/r4nd0m6uy/charguychess.git;protocol=https;branch=master \
 "
-SRCREV = "a2ecc0883a6c23d6c1a65069e3f9c61c7c4591de"
+SRCREV = "${AUTOREV}"
 PV = "git-${SRCREV}"
 PR = "r0"
 S = "${WORKDIR}/git"

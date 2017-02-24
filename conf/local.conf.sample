@@ -62,4 +62,4 @@ INHERIT += "rm_work"
 #PACKAGE_FEED_ARCHS = "all cortexa7hf-neon-vfpv4 raspberrypi3"
 
 # More tools in SDK
-TOOLCHAIN_TARGET_TASK += " cpputest "
+TOOLCHAIN_TARGET_TASK += " cpputest-staticdev "

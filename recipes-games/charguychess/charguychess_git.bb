@@ -13,6 +13,6 @@ SRC_URI = " \
   git://github.com/r4nd0m6uy/charguychess.git;protocol=https;branch=master \
 "
 SRCREV = "${AUTOREV}"
-PV = "git-${SRCREV}"
+PV = "git-${SRCPV}"
 PR = "r0"
 S = "${WORKDIR}/git"
